@@ -3,10 +3,12 @@ import {  createBrowserRouter,  RouterProvider, } from "react-router";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import Ui from "./page/Ui";
+import Code from "./page/code";
 
 const router = createBrowserRouter([
   {  path: "/", element: <App/>,},
   {  path: "/ui", element: <Ui/>,},
+  {  path: "/code", element: <Code/>,},
 ]);
 
 const root = document.getElementById("root");

@@ -13,7 +13,7 @@ const Drawer = () => {
 
   return (
     <>
-    <nav className="fixed top-2 left-1/2 z-50 bg-[#c0baca] 100 p-4 rounded-3xl flex items-center justify-center gap-12">
+    <nav className="fixed top-2 left-[44vw] z-50 bg-[#c0baca] 100 p-4 rounded-3xl flex items-center justify-center gap-12">
       <div>
         <button
         onClick={() => setIsOpen(true)}
@@ -76,7 +76,7 @@ const Drawer = () => {
           </ul>
           <hr/>
           <ul className="space-y-4 h-[calc(100vh-15rem)] overflow-y-auto">
-            <li><Link to='#' className="brawer_text">code</Link></li>
+            <li><Link to='/code' className="brawer_text">code</Link></li>
             <li><Link to='#' className="brawer_text">button</Link></li>
             <li><Link to='#' className="brawer_text">card</Link></li>
             <li><Link to='#' className="brawer_text">navbar</Link></li>
