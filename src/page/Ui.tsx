@@ -4,7 +4,7 @@ import Drawer from "../components/ui/Drawer";
 
 const Ui = () => {
     return (
-        <div className="relative min-h-screen bg-gray-100">
+        <div className="relative min-h-screen bg-black">
         <Drawer />
             <main className="p-8 grid grid-cols-5 gap-3 pt-28 items-center">
                 <Link to='#' className="Link_card">code</Link>
