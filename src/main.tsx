@@ -2,9 +2,11 @@
 import {  createBrowserRouter,  RouterProvider, } from "react-router";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+import Ui from "./page/Ui";
 
 const router = createBrowserRouter([
   {  path: "/", element: <App/>,},
+  {  path: "/ui", element: <Ui/>,},
 ]);
 
 const root = document.getElementById("root");
