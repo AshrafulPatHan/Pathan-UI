@@ -1,9 +1,46 @@
+import { Link } from "react-router";
+import Drawer from "../components/ui/Drawer";
 
 
 const Ui = () => {
     return (
-        <div>
-            ui
+        <div className="relative min-h-screen bg-gray-100">
+        <Drawer />
+            <main className="p-8 grid grid-cols-5 gap-3 pt-28 items-center">
+                <Link to='#' className="Link_card">code</Link>
+                <Link to='#' className="Link_card">button</Link>
+                <Link to='#' className="Link_card">card</Link>
+                <Link to='#' className="Link_card">navbar</Link>
+                <Link to='#' className="Link_card">footer</Link>
+                <Link to='#' className="Link_card">hero</Link>
+                <Link to='#' className="Link_card">from</Link>
+                <Link to='#' className="Link_card">input</Link>
+                <Link to='#' className="Link_card">login</Link>
+                <Link to='#' className="Link_card">registration</Link>
+                <Link to='#' className="Link_card">admin page</Link>
+                <Link to='#' className="Link_card">dropdown</Link>
+                <Link to='#' className="Link_card">menu</Link>
+                <Link to='#' className="Link_card">image shape</Link>
+                <Link to='#' className="Link_card">contact</Link>
+                <Link to='#' className="Link_card">clider</Link>
+                <Link to='#' className="Link_card">image</Link>
+                <Link to='#' className="Link_card">shape</Link>
+                <Link to='#' className="Link_card">heder text</Link>
+                <Link to='#' className="Link_card">pragraf text</Link>
+                <Link to='#' className="Link_card">modal</Link>
+                <Link to='#' className="Link_card">color plate</Link>
+                <Link to='#' className="Link_card">color text</Link>
+                <Link to='#' className="Link_card">font family</Link>
+                <Link to='#' className="Link_card">flex box</Link>
+                <Link to='#' className="Link_card">grid layout</Link>
+                <Link to='#' className="Link_card">animation</Link>
+                <Link to='#' className="Link_card">navbar animation</Link>
+                <Link to='#' className="Link_card">scroll animation</Link>
+                <Link to='#' className="Link_card">javascript</Link>
+                <Link to='#' className="Link_card">express</Link>
+                <Link to='#' className="Link_card">Tutorial</Link>
+                {/* <Link to='#' className="Link_card"></Link> */}
+            </main>
         </div>
     );
 };

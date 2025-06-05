@@ -4,3 +4,17 @@
   --margin-top: 80px;
 }
 
+.Link_card{
+  color: rgb(255, 255, 255);
+  padding: 6px 12px;
+  background: linear-gradient(#7038af,#7b4faa);
+}
+
+.brawer_text{
+  color: rgb(56, 56, 206);
+}
+.brawer_text:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(0, 0, 0);
+  text-decoration-style: solid;
+}
