@@ -7,7 +7,7 @@ const Ui = () => {
         <div className="relative min-h-screen bg-black">
         <Drawer />
             <main className="p-8 grid grid-cols-5 gap-3 pt-28 items-center">
-                <Link to='#' className="Link_card">code</Link>
+                <Link to='/code' className="Link_card">code</Link>
                 <Link to='#' className="Link_card">button</Link>
                 <Link to='#' className="Link_card">card</Link>
                 <Link to='#' className="Link_card">navbar</Link>
