@@ -2,6 +2,7 @@
 import CodeShowCard from '../components/ui/code/CodeShowCard';
 import GigCode from '../components/ui/code/GigCode';
 import GitCod from '../components/ui/code/GitCod';
+import LinuxCode from '../components/ui/code/LinuxCode';
 import MacCode from '../components/ui/code/MacCode';
 import Drawer from '../components/ui/Drawer';
 
@@ -23,6 +24,9 @@ const Code = () => {
                 </div>
                 <div>
                     <MacCode/>
+                </div>
+                <div>
+                    <LinuxCode/>
                 </div>
             </div>
         </div>
