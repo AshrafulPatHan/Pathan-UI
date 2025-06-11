@@ -32,11 +32,15 @@ import Tutorial from "./page/Tutorial";
 import Footer from "./components/navigation/footer/Footer";
 import Navbar from "./components/navigation/navbar/Navbar";
 import Admin_Page from "./components/admin page/Admin_Page";
+import Card from "./page/Card";
+import Login from "./page/Login";
+import Javascript from "./page/Javascript";
 
 const router = createBrowserRouter([
   {  path: "/", element: <App/>,},
   {  path: "/ui", element: <Ui/>,},
   {  path: "/code", element: <Code/>,},
+  {  path: "/card", element: <Card/>,},
   {  path: "/animation", element: <Animation/>,},
   {  path: "/button", element: <Button/>,},
   {  path: "/slider", element: <Slider/>,},
@@ -44,7 +48,6 @@ const router = createBrowserRouter([
   {  path: "/color", element: <Color/>,},
   {  path: "/contact", element: <Contact/>,},
   {  path: "/dropdown", element: <Dropdown/>,},
-  {  path: "/express", element: <Express/>,},
   {  path: "/flex", element: <Flex/>,},
   {  path: "/font", element: <Font/>,},
   {  path: "/form", element: <Form/>,},
@@ -59,12 +62,15 @@ const router = createBrowserRouter([
   {  path: "/nav-animation", element: <Nav_Animation/>,},
   {  path: "/paragraph-text", element: <Paragraph_Text/>,},
   {  path: "/registration", element: <Registration/>,},
+  {  path: "/login", element: <Login/>,},
   {  path: "/scroll-animation", element: <Scroll_animation/>,},
   {  path: "/tutorial", element: <Tutorial/>,},
   {  path: "/shape", element: <Shape/>,},
   {  path: "/footer", element: <Footer/>,},
   {  path: "/admin-page", element: <Admin_Page/>,},
   {  path: "/navbar", element: <Navbar/>,},
+  {  path: "/javascript", element: <Javascript/>,},
+  {  path: "/express", element: <Express/>,},
 ]);
 
 const root = document.getElementById("root");
