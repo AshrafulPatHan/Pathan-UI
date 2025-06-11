@@ -69,7 +69,7 @@ const Drawer = () => {
 
         <nav className="p-4">
           <ul className="space-y-4">
-            <li><Link to="/" className="brawer_text">Home</Link></li>
+            <li><Link to="/ui" className="brawer_text">Home</Link></li>
             <li><Link to="#" className="brawer_text">About</Link></li>
             <li><Link to="#" className="brawer_text">Services</Link></li>
             <li><Link to="#" className="brawer_text">Contact</Link></li>
