@@ -13,7 +13,7 @@ const Drawer = () => {
 
   return (
     <>
-    <nav className="fixed top-2 left-[44vw] z-50 bg-[#c0baca] 100 px-4 py-1 rounded-3xl flex items-center justify-center gap-6 ">
+    <nav className="fixed top-2 left-[44vw] z-50 bg-[#c0baca] 100 px-4 py-1 rounded-xl flex items-center justify-center gap-6 ">
       <div>
         <button
         onClick={() => setIsOpen(true)}
