@@ -1,5 +1,6 @@
 
 import CodeShowCard from '../components/ui/code/CodeShowCard';
+import GitCod from '../components/ui/code/GitCod';
 import Drawer from '../components/ui/Drawer';
 
 const Code = () => {
@@ -7,7 +8,12 @@ const Code = () => {
         <div>
             <Drawer/>
             <div className='mt-24'>
-                <CodeShowCard/>
+                <div>
+                    <CodeShowCard/>
+                </div>
+                <div>
+                    <GitCod/>
+                </div>
             </div>
         </div>
     );
