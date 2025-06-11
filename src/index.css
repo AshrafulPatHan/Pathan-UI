@@ -18,3 +18,45 @@
   text-decoration-color: rgb(0, 0, 0);
   text-decoration-style: solid;
 }
+
+
+/* add custom scroll bar */
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 12px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+
+
+/* Tailwind Scrollbar Customization */
+.scrollbar-thin {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #6b7280 transparent; /* Firefox */
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* Tailwind gray-500 */
+  border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+

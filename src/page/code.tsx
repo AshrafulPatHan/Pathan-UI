@@ -4,6 +4,7 @@ import GigCode from '../components/ui/code/GigCode';
 import GitCod from '../components/ui/code/GitCod';
 import LinuxCode from '../components/ui/code/LinuxCode';
 import MacCode from '../components/ui/code/MacCode';
+import UnixCode from '../components/ui/code/UnixCode';
 import Drawer from '../components/ui/Drawer';
 
 
@@ -27,6 +28,9 @@ const Code = () => {
                 </div>
                 <div>
                     <LinuxCode/>
+                </div>
+                <div>
+                    <UnixCode/>
                 </div>
             </div>
         </div>

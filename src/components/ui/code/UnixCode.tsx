@@ -4,7 +4,7 @@ import { IoCopyOutline } from "react-icons/io5";
 
 
 
-const LinuxCode = () => {
+const UnixCode = () => {
 const [copied, setCopied] = useState(false);
 
 
@@ -15,17 +15,17 @@ import { IoCopyOutline } from "react-icons/io5";
 
 
 
-const LinuxCode = () => {
+const UnixCode = () => {
 const [copied, setCopied] = useState(false);
 
 
 const code = '
-
 function Name(){
     return("Hello world")
 };
 
 Name()
+
 '
 
   const handleCopy = () => {
@@ -38,8 +38,8 @@ Name()
     return (
         <div>
             <div className='relative bg-gradient-to-tl from-[#252B37] w-[35vw] to-[#383e49] text-[#fff5f5] p-5  rounded-xl '>
-                <div className='overflow-y-auto'>
-                    <pre>{code}</pre>
+                <div className='overflow-y-auto max-y-[300px] pr-2 scrollbar-thin'>
+                    <pre >{code}</pre>
                 </div>
                 <div className="absolute top-4 flex gap-2">
                     <FaCircle className="text-red-500 text-sm" />
@@ -55,23 +55,29 @@ Name()
     );
 };
 
-export default LinuxCode;
+export default UnixCode;
+
 
 ---------------------------- css -------------------------------------------
-/* add custom scroll bar */
 
-::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+
+/* Tailwind Scrollbar Customization */
+.scrollbar-thin {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #6b7280 transparent; /* Firefox */
 }
-::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 12px;
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #6b7280; /* Tailwind gray-500 */
+  border-radius: 4px;
 }
-::-webkit-scrollbar-track {
+
+.scrollbar-thin::-webkit-scrollbar-track {
   background: transparent;
 }
 
@@ -88,8 +94,8 @@ export default LinuxCode;
     return (
         <div>
             <div className='relative bg-gradient-to-tl from-[#252B37] w-[35vw] to-[#383e49] text-[#fff5f5] p-5  rounded-xl '>
-                <div className='overflow-y-auto'>
-                    <pre>{code}</pre>
+                <div className='overflow-y-auto max-y-[300px] pr-2 scrollbar-thin'>
+                    <pre >{code}</pre>
                 </div>
                 <div className="absolute top-4 flex gap-2">
                     <FaCircle className="text-red-500 text-sm" />
@@ -105,4 +111,4 @@ export default LinuxCode;
     );
 };
 
-export default LinuxCode;
+export default UnixCode;
