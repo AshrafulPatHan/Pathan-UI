@@ -13,33 +13,33 @@ const Drawer = () => {
 
   return (
     <>
-    <nav className="fixed top-2 left-[44vw] z-50 bg-[#c0baca] 100 p-4 rounded-3xl flex items-center justify-center gap-12">
+    <nav className="fixed top-2 left-[44vw] z-50 bg-[#c0baca] 100 px-4 py-1 rounded-3xl flex items-center justify-center gap-6 ">
       <div>
         <button
         onClick={() => setIsOpen(true)}
         >
-          <IoMdMenu className="text-2xl text-black mt-1"/>
+          <IoMdMenu className="text-xl text-black mt-1"/>
         </button>
       </div>
       <div>
         <button
         onClick={() => setIsOpen(true)}
         >
-          <FaCircleStop className="text-2xl text-black  mt-1"/>
+          <FaCircleStop className="text-xl text-black  mt-1"/>
         </button>
       </div>
       <div>
         <button
         onClick={() => setIsOpen(true)}
         >
-          <FaDesktop className="text-2xl text-black mt-1"/>
+          <FaDesktop className="text-xl text-black mt-1"/>
         </button>
       </div>
       <div>
         <button
         onClick={() => setIsOpen(true)}
         >
-          <FaLongArrowAltUp className="text-2xl text-black mt-1"/>
+          <FaLongArrowAltUp className="text-xl text-black mt-1"/>
         </button>
       </div>
     </nav>
