@@ -3,16 +3,16 @@ import { IoCopyOutline } from "react-icons/io5";
 
 
 
-const GitCod = () => {
+const GigCode = () => {
 const [copied, setCopied] = useState(false);
 
 
 const code = `
-function name(){
+function Name(){
     return("Hello world")
 };
 
-name()
+Name()
 `
 
   const handleCopy = () => {
@@ -24,10 +24,10 @@ name()
 
     return (
         <div>
-            <div className='relative bg-gradient-to-tl from-[#252B37] w-[35vw] to-[#383e49] text-[#d4c4c4] p-5 overflow-hidden rounded-xl '>
+            <div className='relative bg-gradient-to-tl from-[#252B37] w-[35vw] to-[#383e49] text-[#f1eaea] p-5 overflow-hidden rounded-xl '>
                 <pre>{code}</pre>
-                <button onClick={handleCopy} className='absolute top-4 right-4 flex gap-1  '>
-                    <IoCopyOutline className='text-xl '/>
+                <button onClick={handleCopy} className='absolute top-4 right-4 flex gap-1 bg-gray-600 px-3 py-1 rounded text-sm items-center text-white '>
+                    <IoCopyOutline />
                     {copied ? "Copied" : "Copy"}
                 </button>
             </div>
@@ -35,4 +35,4 @@ name()
     );
 };
 
-export default GitCod;
+export default GigCode;
