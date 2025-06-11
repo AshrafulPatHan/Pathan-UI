@@ -76,38 +76,39 @@ const Drawer = () => {
           </ul>
           <hr/>
           <ul className="space-y-4 h-[calc(100vh-15rem)] overflow-y-auto">
+            {/* <li><Link to='/code' className="brawer_text">code</Link></li> */}
             <li><Link to='/code' className="brawer_text">code</Link></li>
-            <li><Link to='#' className="brawer_text">button</Link></li>
-            <li><Link to='#' className="brawer_text">card</Link></li>
-            <li><Link to='#' className="brawer_text">navbar</Link></li>
-            <li><Link to='#' className="brawer_text">footer</Link></li>
-            <li><Link to='#' className="brawer_text">hero</Link></li>
-            <li><Link to='#' className="brawer_text">from</Link></li>
-            <li><Link to='#' className="brawer_text">input</Link></li>
-            <li><Link to='#' className="brawer_text">login</Link></li>
-            <li><Link to='#' className="brawer_text">registration</Link></li>
-            <li><Link to='#' className="brawer_text">admin page</Link></li>
-            <li><Link to='#' className="brawer_text">dropdown</Link></li>
-            <li><Link to='#' className="brawer_text">menu</Link></li>
-            <li><Link to='#' className="brawer_text">image shape</Link></li>
-            <li><Link to='#' className="brawer_text">contact</Link></li>
-            <li><Link to='#' className="brawer_text">clider</Link></li>
-            <li><Link to='#' className="brawer_text">image</Link></li>
-            <li><Link to='#' className="brawer_text">shape</Link></li>
-            <li><Link to='#' className="brawer_text">heder text</Link></li>
-            <li><Link to='#' className="brawer_text">pragraf text</Link></li>
-            <li><Link to='#' className="brawer_text">modal</Link></li>
-            <li><Link to='#' className="brawer_text">color plate</Link></li>
-            <li><Link to='#' className="brawer_text">color text</Link></li>
-            <li><Link to='#' className="brawer_text">font family</Link></li>
-            <li><Link to='#' className="brawer_text">flex box</Link></li>
-            <li><Link to='#' className="brawer_text">grid layout</Link></li>
-            <li><Link to='#' className="brawer_text">animation</Link></li>
-            <li><Link to='#' className="brawer_text">navbar animation</Link></li>
-            <li><Link to='#' className="brawer_text">scroll animation</Link></li>
-            <li><Link to='#' className="brawer_text">javascript</Link></li>
-            <li><Link to='#' className="brawer_text">express</Link></li>
-            <li><Link to='#' className="brawer_text">Tutorial</Link></li>
+            <li><Link to='/button' className="brawer_text">button</Link></li>
+            <li><Link to='/card' className="brawer_text">card</Link></li>
+            <li><Link to='/navbar' className="brawer_text">navbar</Link></li>
+            <li><Link to='/footer' className="brawer_text">footer</Link></li>
+            <li><Link to='/hero' className="brawer_text">hero</Link></li>
+            <li><Link to='/form' className="brawer_text">from</Link></li>
+            <li><Link to='/input' className="brawer_text">input</Link></li>
+            <li><Link to='/login' className="brawer_text">login</Link></li>
+            <li><Link to='/registration' className="brawer_text">registration</Link></li>
+            <li><Link to='/admin-page' className="brawer_text">admin page</Link></li>
+            <li><Link to='/dropdown' className="brawer_text">dropdown</Link></li>
+            <li><Link to='/menu' className="brawer_text">menu</Link></li>
+            <li><Link to='/image-shape' className="brawer_text">image shape</Link></li>
+            <li><Link to='/contact' className="brawer_text">contact</Link></li>
+            <li><Link to='/slider' className="brawer_text">slider</Link></li>
+            <li><Link to='/image' className="brawer_text">image</Link></li>
+            <li><Link to='/shape' className="brawer_text">shape</Link></li>
+            <li><Link to='/header-text' className="brawer_text">heder text</Link></li>
+            <li><Link to='/paragraph-text' className="brawer_text">paragraph text</Link></li>
+            <li><Link to='/model' className="brawer_text">modal</Link></li>
+            <li><Link to='/color' className="brawer_text">color plate</Link></li>
+            <li><Link to='/color-text' className="brawer_text">color text</Link></li>
+            <li><Link to='/font' className="brawer_text">font family</Link></li>
+            <li><Link to='/flex' className="brawer_text">flex box</Link></li>
+            <li><Link to='/grid' className="brawer_text">grid layout</Link></li>
+            <li><Link to='/animation' className="brawer_text">animation</Link></li>
+            <li><Link to='/nav-animation' className="brawer_text">navbar animation</Link></li>
+            <li><Link to='/scroll-animation' className="brawer_text">scroll animation</Link></li>
+            <li><Link to='/javascript' className="brawer_text">javascript</Link></li>
+            <li><Link to='/express' className="brawer_text">express</Link></li>
+            <li><Link to='/tutorial' className="brawer_text">Tutorial</Link></li>
           </ul>
         </nav>
       </div>
