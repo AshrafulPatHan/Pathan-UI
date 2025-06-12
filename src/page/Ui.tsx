@@ -8,6 +8,7 @@ const Ui = () => {
         <Drawer />
             <main className="p-8 grid grid-cols-5 gap-3 pt-28 items-center">
                 <Link to='/code' className="Link_card">code</Link>
+                <Link to='/template' className="Link_card">Template</Link>
                 <Link to='/button' className="Link_card">button</Link>
                 <Link to='/card' className="Link_card">card</Link>
                 <Link to='/navbar' className="Link_card">navbar</Link>

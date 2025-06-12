@@ -35,6 +35,7 @@ import Admin_Page from "./components/admin page/Admin_Page";
 import Card from "./page/Card";
 import Login from "./page/Login";
 import Javascript from "./page/Javascript";
+import Template from "./page/Template";
 
 const router = createBrowserRouter([
   {  path: "/", element: <App/>,},
@@ -71,6 +72,7 @@ const router = createBrowserRouter([
   {  path: "/navbar", element: <Navbar/>,},
   {  path: "/javascript", element: <Javascript/>,},
   {  path: "/express", element: <Express/>,},
+  {  path: "/template", element: <Template/>,},
 ]);
 
 const root = document.getElementById("root");

@@ -78,6 +78,7 @@ const Drawer = () => {
           <ul className="space-y-4 h-[calc(100vh-15rem)] overflow-y-auto">
             {/* <li><Link to='/code' className="brawer_text">code</Link></li> */}
             <li><Link to='/code' className="brawer_text">code</Link></li>
+            <li><Link to='/template' className="brawer_text">Template</Link></li>
             <li><Link to='/button' className="brawer_text">button</Link></li>
             <li><Link to='/card' className="brawer_text">card</Link></li>
             <li><Link to='/navbar' className="brawer_text">navbar</Link></li>
