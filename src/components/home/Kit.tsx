@@ -4,6 +4,7 @@ import Button from './Button';
 import  "./home.css";
 import Typography from './Typography';
 import Image from './Image';
+import Input from './ui/Input';
 
 const Kit = () => {
     return (
@@ -19,6 +20,7 @@ const Kit = () => {
                 </div>
                 <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* input */}
+                    <Input/>
                 </div>
                 <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Checkboxes */}
