@@ -1,5 +1,19 @@
 import React from 'react';
 import Desktop from '../../../assets/UI/Background.svg';
+import { GoChevronRight } from "react-icons/go";
+import { FaFigma } from "react-icons/fa";
+import { CgTemplate } from "react-icons/cg";
+import { FaCloudMoon } from "react-icons/fa";
+import { FaDesktop } from "react-icons/fa";
+import { TiWeatherSunny } from "react-icons/ti";
+import { FaRegSun } from "react-icons/fa6";
+import { GoArrowRight } from "react-icons/go";
+import { GoArrowLeft } from "react-icons/go";
+
+
+
+
+
 
 
 
@@ -15,16 +29,16 @@ const First = () => {
             <main > 
                 {/* left side section */}
                 <div>
-                    <button>Bay at 50% off</button>
-                    <h2></h2>
-                    <p></p>
+                    <button>Bay at 50% off <GoChevronRight/></button>
+                    <h2>Budding a beautiful website is very hard an very beautiful to mack</h2>
+                    <p>this is a random template for the website design we can mack the beautiful design using the template</p>
                     <div>
                         <div>
-                            <button></button>  
-                            <button></button>  
+                            <button><FaFigma/></button>  
+                            <button><CgTemplate/></button>  
                         </div>
-                        <button></button>
-                        <button></button>
+                        <button><FaFigma/> View in figma</button>
+                        <button><CgTemplate/> Figma template</button>
                     </div>
                 </div>
                 {/* the right side section */}
@@ -33,9 +47,9 @@ const First = () => {
                     <div>
                         {/* mode dark and withe */}
                         <div>
-                            <button></button>
-                            <button></button>
-                            <button></button>
+                            <button><FaCloudMoon/></button>
+                            <button><FaDesktop/></button>
+                            <button><TiWeatherSunny/></button>
                         </div>
                         {/* card 1 */}
                         <div>
@@ -44,16 +58,16 @@ const First = () => {
                             </div>
                             <div>
                                 <div>
-                                    <p>New Update</p>
+                                    <p><FaRegSun/> New Update</p>
                                     <p></p>
                                 </div>
                                 <div>
-                                    <button></button>
-                                    <button></button>
+                                    <button><GoArrowLeft/></button>
+                                    <button><GoArrowRight/></button>
                                 </div>
                             </div>
                             <div>
-                                <h3></h3>
+                                <h3>UI Template</h3>
                                 <p></p>
                                 <button>Browse template</button>
                             </div>
