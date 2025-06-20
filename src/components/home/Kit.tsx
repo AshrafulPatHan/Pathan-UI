@@ -1,4 +1,9 @@
 import React from 'react';
+import HeroSection from './HeroSection';
+import Button from './Button';
+import  "./home.css";
+import Typography from './Typography';
+import Image from './Image';
 
 const Kit = () => {
     return (
@@ -6,50 +11,54 @@ const Kit = () => {
             <div>
                 <div>
                     {/* the bane image */}
+                    <HeroSection/>
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* button */}
+                    <Button/>
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* input */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Checkboxes */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Menu */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Navigation */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Navigation Tabs */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Progress Bars */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Notifications */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Typography */}
+                    <Typography/>
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Images */}
+                    <Image/>
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Javascript components */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Carousel */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Nucleo Icons */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* Completed with examples */}
                 </div>
-                <div>
+                <div className='mt-[var(--margin-top)] ml-[var(--margin-left)] '>
                     {/* footer */}
                 </div>
             </div>
