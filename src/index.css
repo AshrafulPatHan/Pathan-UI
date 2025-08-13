@@ -23,15 +23,15 @@
 /* add custom scroll bar */
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #888;
+  background-color: #38ca38;
   border-radius: 12px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #555;
+  background-color: #5edb24;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
