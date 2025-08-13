@@ -3,12 +3,12 @@ import React from "react";
 import { useNavigate } from "react-router";
 
 const HeroSection = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
 
-    // go to ui
-    const handelNavigation = () =>{
-        navigate('/ui')
-    }
+  // go to ui
+  const handelNavigation = () => {
+    navigate("/ui");
+  };
   return (
     <div
       className="relative min-h-screen bg-cover bg-center flex items-center justify-center"
@@ -24,10 +24,14 @@ const HeroSection = () => {
       <div className="relative z-10 text-center text-white px-4 max-w-md">
         <h1 className="mb-5 text-5xl font-bold">Welcome to Pathan UI</h1>
         <p className="mb-5">
-          this is my personal ui library on react for my personal use , the all ui made of react and tailwind css all ui is free and 
-          open source the animation of this ui made of css or framer motion or gsap
+          this is my personal ui library on react for my personal use , the all
+          ui made of react and tailwind css all ui is free and open source the
+          animation of this ui made of css or framer motion or gsap
         </p>
-        <button onClick={handelNavigation} className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
+        <button
+          onClick={handelNavigation}
+          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded"
+        >
           Get Started
         </button>
       </div>
