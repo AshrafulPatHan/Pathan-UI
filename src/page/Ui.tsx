@@ -4,7 +4,7 @@ import { useState } from "react";
 import Drawer from "../components/ui/Drawer";
 
 const Ui = () => {
-    const [hoveredCard, setHoveredCard] = useState(null);
+    const [hoveredCard, setHoveredCard] = useState<number | null>(null);
 
     const uiComponents = [
         { path: '/code', name: 'Code', icon: '💻', category: 'Development' },
