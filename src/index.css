@@ -2,7 +2,13 @@
 
 :root {
   --margin-top: 80px;
+  --primary: #f5f5f5;
 }
+
+body{
+  background: var(--primary);
+}
+
 
 .Link_card{
   color: rgb(255, 255, 255);
