@@ -2,7 +2,8 @@ import React, { useState, type JSX } from 'react';
 import { FaCircle } from 'react-icons/fa';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import Google from '../../../assets/icon/Google.svg'; // তোমার আসল path দিয়ে দিও
+import Google from '../../../assets/icon/Google.svg';
+// import { preview } from 'vite';
 
 const UILibrary = () => {
   // 🔹 JSON Data (UI preview + code in one place)
@@ -21,11 +22,85 @@ const UILibrary = () => {
         <button className='w-40 h-16 bg-gradient-to-tl from-blue-700 to-blue-600 text-white rounded-lg font-semibold hover:scale-105 transition'>Button3</button>,
         <button className='p-5 bg-gradient-to-tl from-[#141414] to-[#0b3847] text-white rounded-lg font-semibold flex items-center justify-center hover:scale-105 transition'><img src={Google} alt="google" /></button>
       ]
+    },
+    {
+        title: "Color Buttons",
+        code:`
+<button className="w-40 h-12 bg-gray-100 text-gray-700 rounded-lg font-semibold border-2 border-gray-200 hover:bg-gray-200 transition-colors">
+    Default
+</button>
+
+<button className="w-40 h-12 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+    Primary
+</button>
+
+<button className="w-40 h-12 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors">
+    Success
+</button>
+
+<button className="w-40 h-12 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors">
+    Danger
+</button>
+        `,
+        preview: [
+            <button className="w-40 h-12 bg-gray-100 text-gray-700 rounded-lg font-semibold border-2 border-gray-200 hover:bg-gray-200 transition-colors">
+                Default
+            </button>,
+            <button className="w-40 h-12 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                Primary
+            </button>,
+            <button className="w-40 h-12 bg-green-600 text-white rounded-lg font-semibold hover:bg-green-700 transition-colors">
+                Success
+            </button>,
+            <button className="w-40 h-12 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                Danger
+            </button>
+        ]
+    },
+    {
+        title: "Gradient Buttons",
+        code:`
+<button className="w-40 h-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all">
+    Purple Pink
+</button>
+
+<button className="w-40 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all">
+    Blue Cyan
+</button>
+
+<button className="w-40 h-12 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-lg font-semibold hover:from-green-500 hover:to-blue-600 transition-all">
+    Green Blue
+</button>
+
+<button className="w-40 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-lg font-semibold hover:from-yellow-500 hover:to-orange-600 transition-all">
+    Yellow Orange
+</button>
+        `,
+        preview:[
+            <button className="w-40 h-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg font-semibold hover:from-purple-600 hover:to-pink-600 transition-all">
+            Purple Pink
+            </button>,
+            <button className="w-40 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 text-white rounded-lg font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all">
+                Blue Cyan
+            </button>,
+            <button className="w-40 h-12 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-lg font-semibold hover:from-green-500 hover:to-blue-600 transition-all">
+                Green Blue
+            </button>,
+            <button className="w-40 h-12 bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-lg font-semibold hover:from-yellow-500 hover:to-orange-600 transition-all">
+                Yellow Orange
+            </button>   
+        ]
     }
   ];
 
+type Props = {
+  title: string;
+  code: string;
+  preview: JSX.Element[];
+};
+
   // 🔹 Section Component (inside same file)
-  const ComponentSection = ({ title, code, preview }) => {
+  const ComponentSection = ({ title, code, preview }:Props) => {
     const [copied, setCopied] = useState(false);
     const [showCode, setShowCode] = useState(false);
 
