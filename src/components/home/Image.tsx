@@ -1,5 +1,5 @@
 import React from 'react';
-import Photo from '../../assets/image/pexels-pixabay-41162.jpg';
+import Photo from '../../assets/image/astronot.jpg';
 
 const Image = () => {
     return (
