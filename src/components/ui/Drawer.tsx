@@ -63,19 +63,19 @@ const Drawer = () => {
           <IoMdMenu className="text-2xl  text-blue-500 group-hover:text-blue-600 transition-colors duration-300"/>
         </button>
         
-        <button
+        <Link to='/'
           className="group p-2 rounded-xl transition-all duration-300 hover:bg-pink-400/20 hover:scale-110"
           title="Stop"
         >
           <FaCircleStop className="text-xl  text-blue-500 group-hover:text-blue-600 transition-colors duration-300"/>
-        </button>
+        </Link>
         
-        <button
+        <Link to='/ui'
           className="group p-2 rounded-xl transition-all duration-300 hover:bg-blue-400/20 hover:scale-110"
-          title="Desktop"
+          title="Home"
         >
           <FaDesktop className="text-xl text-blue-500 group-hover:text-blue-600 transition-colors duration-300"/>
-        </button>
+        </Link>
         
         <button
           className="group p-2 rounded-xl transition-all duration-300 hover:bg-green-400/20 hover:scale-110"
