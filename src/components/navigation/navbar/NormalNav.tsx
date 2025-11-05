@@ -3,6 +3,7 @@ import { FaCircle, FaRegHeart,  } from 'react-icons/fa';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import ImageS from "../../../assets/image/astronot.jpg"
+import { Link } from 'react-router';
 
 const NormalNav = () => {
     // 🔹 JSON Data (UI preview + code in one place)
@@ -16,8 +17,22 @@ const NormalNav = () => {
 
             `,
             preview: [
-                <div>
-
+                <div className='max-w-7xl w-full bg-blue-500/10 backdrop-blur-2xl px-4 py-4 '>
+                    <div className='flex items-center justify-between'>
+                        <div className='flex items-center gap-4'>
+                            <Link to='/' className='font-bold'>lorem</Link>
+                            <Link to='/' className='font-bold'>lorem</Link>
+                            <Link to='/' className='font-bold'>lorem</Link>
+                            <Link to='/' className='font-bold'>lorem</Link>
+                        </div>
+                        <div>
+                            <img src="/icon.svg" alt="logo" className='w-10 ' />
+                        </div>
+                        <div className='flex items-center gap-4'>
+                            <button className='font-semibold font-mono'>Login</button>
+                            <button className='font-semibold font-mono'>Registration</button>
+                        </div>
+                    </div>
                 </div>
             ]
         },
@@ -59,7 +74,7 @@ const NormalNav = () => {
                 <hr className="text-[#00000049]" />
 
                 {/* Preview Buttons */}
-                <div className="flex flex-row items-center justify-center gap-8">
+                <div className="flex flex-col items-center justify-center gap-8">
                     {preview.map((btn: JSX.Element, index: number) => (
                         <React.Fragment key={index}>{btn}</React.Fragment>
                     ))}
