@@ -1,63 +1,65 @@
 import React, { useState, type JSX } from 'react';
-import { FaCircle, FaRegHeart,  } from 'react-icons/fa';
+import { FaCircle, FaRegHeart, } from 'react-icons/fa';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import ImageS from "../../../assets/image/astronot.jpg"
 
-const NormalCard = () => {
+const FirstInput = () => {
     // 🔹 JSON Data (UI preview + code in one place)
     const componentsData = [
         {
-            title: "Basic Card",
+            title: "Basic Navbar",
             code: `
-# card 1
-<div className='w-80 '>
-    <div className='w-80 h-auto overflow-hidden object-center rounded-lg'>
-        <img src={ImageS} alt="photo" className='w-full h-full object-cover scale-100 hover:scale-110 transition-transform duration-300 ease-in-out ' />
-    </div>
-    <div className='text-sm font-mono'>
-        <h2 className='text-lg font-bold font-serif mt-2'>Title</h2>
-        <p className='mb-1 font-semibold'>Subtitle of the card</p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id maiores ex facilis explicabo voluptates fuga pariatur, atque quisquam! Sed!
-        </p>
+<div>
+    <div className="relative">
+        <input
+            placeholder="Search..."
+            className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-56 transition-all focus:w-64 outline-none"
+            name="search"
+            type="search"
+        />
+        <svg
+            className="size-6 absolute top-3 right-3 text-gray-500"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+            ></path>
+        </svg>
     </div>
 </div>
-# card 2
 
             `,
             preview: [
-                // card 1
-                <div className='w-80 '>
-                    <div className='w-80 h-auto overflow-hidden object-center rounded-lg'>
-                        <img src={ImageS} alt="photo" className='w-full h-full object-cover scale-100 hover:scale-110 transition-transform duration-300 ease-in-out ' />
-                    </div>
-                    <div className='text-sm font-mono'>
-                        <h2 className='text-lg font-bold font-serif mt-2'>Title</h2>
-                        <p className='mb-1 font-semibold'>Subtitle of the card</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id maiores ex facilis explicabo voluptates fuga pariatur, atque quisquam! Sed!
-                        </p>
-                    </div>
-                </div>,
-                // card 2
-                <div className='w-80 '>
-                    <div className='w-80 h-auto overflow-hidden object-center rounded-lg'>
-                        <img src={ImageS} alt="photo" className='w-full h-full object-cover scale-100 hover:scale-110 transition-transform duration-300 ease-in-out ' />
-                    </div>
-                    <div className='text-sm font-mono'>
-                        <div className='flex items-center justify-between'>
-                            <h2 className='text-lg font-bold font-serif mt-2'>Title</h2>
-                            <button className='mr-1'>
-                                <FaRegHeart className='text-xl'/>
-                            </button>
-                        </div>
-                        <p className='mb-1 font-semibold'>Subtitle of the card</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id maiores ex facilis explicabo voluptates fuga pariatur, atque quisquam! Sed!
-                        </p>
-                    </div>
+                // <!-- From Uiverse.io by seyed-mohsen-mousavi --> 
+                <div className="relative">
+                    <input
+                        placeholder="Search..."
+                        className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-56 transition-all focus:w-64 outline-none"
+                        name="search"
+                        type="search"
+                    />
+                    <svg
+                        className="size-6 absolute top-3 right-3 text-gray-500"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                        ></path>
+                    </svg>
                 </div>
+
             ]
         },
     ];
@@ -80,7 +82,7 @@ const NormalCard = () => {
         };
 
         return (
-            <div className="flex flex-col gap-5 p-7 rounded-2xl shadow-xl bg-white w-[90%] lg:w-[60%] max-w-5xl">
+            <div className="flex flex-col gap-5 p-7 rounded-2xl shadow-xl bg-white w-[90%]">
                 {/* Header */}
                 <div className="flex items-center justify-between">
                     <h2 className="text-2xl font-bold">{title}</h2>
@@ -98,7 +100,7 @@ const NormalCard = () => {
                 <hr className="text-[#00000049]" />
 
                 {/* Preview Buttons */}
-                <div className="flex flex-row items-center justify-center gap-8">
+                <div className="flex flex-col items-center justify-center gap-8">
                     {preview.map((btn: JSX.Element, index: number) => (
                         <React.Fragment key={index}>{btn}</React.Fragment>
                     ))}
@@ -150,4 +152,4 @@ const NormalCard = () => {
     );
 };
 
-export default NormalCard;
+export default FirstInput;

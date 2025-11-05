@@ -12,7 +12,7 @@ const Ui = () => {
         { path: '/button', name: 'Button', icon: '🔘', category: 'Interactive' },
         { path: '/card', name: 'Card', icon: '🃏', category: 'Layout' },
         { path: '/navbar', name: 'Navbar', icon: '🧭', category: 'Navigation' },
-        { path: '/footer', name: 'Footer', icon: '🦶', category: 'Layout' },
+        { path: '/footer', name: 'Footer', icon: '🚧', category: 'Layout' },
         { path: '/hero', name: 'Hero', icon: '🌟', category: 'Layout' },
         { path: '/form', name: 'Form', icon: '📝', category: 'Interactive' },
         { path: '/input', name: 'Input', icon: '⌨️', category: 'Interactive' },
