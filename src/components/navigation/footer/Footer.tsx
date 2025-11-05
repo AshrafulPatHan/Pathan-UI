@@ -11,7 +11,6 @@ const Footer = () => {
                     <NormalFooter/>
                 </div>
             </div>
-            
         </div>
     );
 };
