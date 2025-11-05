@@ -16,8 +16,8 @@ const NormalCard = () => {
             `,
             preview: [
                 <div>
-                    <div>
-                        <img src={ImageS} alt="photo" />
+                    <div className='w-96 h-auto overflow-hidden object-center'>
+                        <img src={ImageS} alt="photo" className=' object-cover hover:scale-110  ' />
                     </div>
                     <div>
                         <h2>Title</h2>
