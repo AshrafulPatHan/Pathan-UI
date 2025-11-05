@@ -21,7 +21,7 @@ const Drawer = () => {
     { to: '/button', label: 'Button', icon: '🔘' },
     { to: '/card', label: 'Card', icon: '🃏' },
     { to: '/navbar', label: 'Navbar', icon: '🧭' },
-    { to: '/footer', label: 'Footer', icon: '🦶' },
+    { to: '/footer', label: 'Footer', icon: '🚧' },
     { to: '/hero', label: 'Hero', icon: '🌟' },
     { to: '/form', label: 'Form', icon: '📝' },
     { to: '/input', label: 'Input', icon: '⌨️' },
