@@ -3,69 +3,83 @@ import { FaCircle, FaRegHeart, } from 'react-icons/fa';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const BasicFrom = () => {
+const StartRegister = () => {
     // 🔹 JSON Data (UI preview + code in one place)
     const componentsData = [
         {
-            title: "Basic Navbar",
+            title: "Basic Registration",
             code: `
 <div>
-
+    
 </div>
 
             `,
             preview: [
-                <div className="flex flex-col items-center justify-center">
-                    <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                            Job Application Form
-                        </h2>
-
-                        <form className="flex flex-col">
+                <form className="px-7 grid justify-center items-center">
+                    <div className="grid gap-6" id="form">
+                        {/* First & Last Name */}
+                        <div className="w-full flex gap-3">
                             <input
                                 type="text"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                                placeholder="Full Name"
+                                id="First-Name"
+                                name="First-Name"
+                                placeholder="First Name"
+                                required
+                                className="capitalize shadow-2xl p-3 w-full outline-none focus:border-solid focus:border-[1px] border-[#035ec5] placeholder:text-black"
                             />
+                            <input
+                                type="text"
+                                id="Last-Name"
+                                name="Last-Name"
+                                placeholder="Last Name"
+                                className="p-3 capitalize shadow-2xl w-full placeholder:text-black outline-none focus:border-solid focus:border-[1px] border-[#035ec5]"
+                            />
+                        </div>
 
+                        {/* Email & Date */}
+                        <div className="grid gap-6 w-full">
                             <input
                                 type="email"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+                                id="Email"
+                                name="email"
                                 placeholder="Email"
+                                className="p-3 shadow-2xl w-full placeholder:text-black outline-none focus:border-solid border-[#035ec5] focus:border-[1px]"
                             />
-
                             <input
-                                type="text"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                                placeholder="Phone Number"
+                                type="date"
+                                required
+                                className="p-3 shadow-2xl w-full text-black outline-none focus:border-solid focus:border-[1px] border-[#035ec5]"
                             />
+                        </div>
 
+                        {/* Password & Confirm Password */}
+                        <div className="flex gap-3">
                             <input
-                                type="text"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                                placeholder="LinkedIn Profile URL"
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Password"
+                                required
+                                className="p-3 shadow-2xl w-full placeholder:text-black outline-none focus:border-solid focus:border-[1px] border-[#035ec5]"
                             />
-
-                            <textarea
-                                name="cover_letter"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                                placeholder="Cover Letter"
-                            ></textarea>
-
                             <input
-                                type="file"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
+                                type="password"
+                                placeholder="Confirm password"
+                                required
+                                className="p-3 shadow-2xl w-full placeholder:text-black outline-none focus:border-solid focus:border-[1px] border-[#035ec5]"
                             />
+                        </div>
 
-                            <button
-                                type="submit"
-                                className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
-                            >
-                                Apply
-                            </button>
-                        </form>
+                        {/* Submit Button */}
+                        <button
+                            type="submit"
+                            className="outline-none shadow-2xl w-full p-3 bg-[#ffffff42] hover:border-[#035ec5] hover:border-solid hover:border-[1px] hover:text-[#035ec5] font-bold transition duration-200"
+                        >
+                            Submit
+                        </button>
                     </div>
-                </div>
+                </form>
+
             ]
         },
     ];
@@ -88,7 +102,7 @@ const BasicFrom = () => {
         };
 
         return (
-            <div className="flex flex-col gap-5 p-7 rounded-2xl shadow-xl bg-white w-[90%] max-w-5xl">
+            <div className="flex flex-col gap-5 p-7 rounded-2xl shadow-xl bg-white w-[90%]">
                 {/* Header */}
                 <div className="flex items-center justify-between">
                     <h2 className="text-2xl font-bold">{title}</h2>
@@ -158,4 +172,4 @@ const BasicFrom = () => {
     );
 };
 
-export default BasicFrom;
+export default StartRegister;

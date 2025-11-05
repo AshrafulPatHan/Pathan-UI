@@ -1,5 +1,6 @@
 import React from 'react';
 import Drawer from '../components/ui/Drawer';
+import BasicFrom from '../components/ui/from/basicFrom';
 
 const Form = () => {
     return (
@@ -7,7 +8,7 @@ const Form = () => {
             <Drawer />
             <div>
                 <div>
-                    <NormalFooter />
+                    <BasicFrom />
                 </div>
             </div>
         </div>

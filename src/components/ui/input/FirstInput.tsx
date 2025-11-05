@@ -3,69 +3,63 @@ import { FaCircle, FaRegHeart, } from 'react-icons/fa';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const BasicFrom = () => {
+const FirstInput = () => {
     // 🔹 JSON Data (UI preview + code in one place)
     const componentsData = [
         {
             title: "Basic Navbar",
             code: `
 <div>
-
+    <div className="relative">
+        <input
+            placeholder="Search..."
+            className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-56 transition-all focus:w-64 outline-none"
+            name="search"
+            type="search"
+        />
+        <svg
+            className="size-6 absolute top-3 right-3 text-gray-500"
+            stroke="currentColor"
+            stroke-width="1.5"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+        >
+            <path
+                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+            ></path>
+        </svg>
+    </div>
 </div>
 
             `,
             preview: [
-                <div className="flex flex-col items-center justify-center">
-                    <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6">
-                        <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                            Job Application Form
-                        </h2>
-
-                        <form className="flex flex-col">
-                            <input
-                                type="text"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                                placeholder="Full Name"
-                            />
-
-                            <input
-                                type="email"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                                placeholder="Email"
-                            />
-
-                            <input
-                                type="text"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                                placeholder="Phone Number"
-                            />
-
-                            <input
-                                type="text"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                                placeholder="LinkedIn Profile URL"
-                            />
-
-                            <textarea
-                                name="cover_letter"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                                placeholder="Cover Letter"
-                            ></textarea>
-
-                            <input
-                                type="file"
-                                className="bg-gray-100 text-gray-900 border-0 rounded-md p-2 mb-4 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-blue-500 transition ease-in-out duration-150"
-                            />
-
-                            <button
-                                type="submit"
-                                className="bg-gradient-to-r from-indigo-500 to-blue-500 text-white font-bold py-2 px-4 rounded-md mt-4 hover:bg-indigo-600 hover:to-blue-600 transition ease-in-out duration-150"
-                            >
-                                Apply
-                            </button>
-                        </form>
-                    </div>
+                // <!-- From Uiverse.io by seyed-mohsen-mousavi --> 
+                <div className="relative">
+                    <input
+                        placeholder="Search..."
+                        className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-56 transition-all focus:w-64 outline-none"
+                        name="search"
+                        type="search"
+                    />
+                    <svg
+                        className="size-6 absolute top-3 right-3 text-gray-500"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                        ></path>
+                    </svg>
                 </div>
+
             ]
         },
     ];
@@ -88,7 +82,7 @@ const BasicFrom = () => {
         };
 
         return (
-            <div className="flex flex-col gap-5 p-7 rounded-2xl shadow-xl bg-white w-[90%] max-w-5xl">
+            <div className="flex flex-col gap-5 p-7 rounded-2xl shadow-xl bg-white w-[90%]">
                 {/* Header */}
                 <div className="flex items-center justify-between">
                     <h2 className="text-2xl font-bold">{title}</h2>
@@ -158,4 +152,4 @@ const BasicFrom = () => {
     );
 };
 
-export default BasicFrom;
+export default FirstInput;
