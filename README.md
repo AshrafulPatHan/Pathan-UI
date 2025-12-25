@@ -49,7 +49,6 @@ Then import and use any component in your project:
 npm install tailwindcss @tailwindcss/vite
 ```
 
-(Refer to the live demo or repository for exact usage of each component.)
 
 ## Contributing
 Pathan UI is open-source and welcomes contributions!  
