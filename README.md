@@ -37,20 +37,16 @@ With **33 ready-to-use components**, Pathan UI focuses on simplicity, performanc
 To use Pathan UI in your project:
 
 1. Make sure you have Tailwind CSS set up in your React project.
-2. Clone or copy components directly from the repository, or install if published as a package (coming soon).
 
 ```bash
-git clone https://github.com/AshrafulPatHan/Pathan-UI.git
+npm create vite@latest my-project
+cd my-project
 ```
 
 Then import and use any component in your project:
 
-```jsx
-import { Button } from 'pathan-ui/components/Button'; // Adjust path as needed
-
-function App() {
-  return <Button variant="primary">Click me</Button>;
-}
+```bash
+npm install tailwindcss @tailwindcss/vite
 ```
 
 (Refer to the live demo or repository for exact usage of each component.)
