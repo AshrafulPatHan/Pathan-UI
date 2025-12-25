@@ -9,12 +9,12 @@ const StartMenu = () => {
     const [open, setOpen] = useState(false);
 
     // dropdown menu
-    const dropdownRef = useRef(null);
+    const dropdownRef =  useRef<HTMLDivElement | null>(null);
 
     // after clikin button dropdown off
     useEffect(() => {
-        const handleClickOutside = (e: { target: unknown; }) => {
-            if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        const handleClickOutside = (e: MouseEvent) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
                 setOpen(false);
             }
         };
