@@ -1,65 +1,71 @@
 import React, { useState, type JSX } from 'react';
-import { FaCircle,  } from 'react-icons/fa';
+import { FaCircle, } from 'react-icons/fa';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const FirstInput = () => {
+const FirstShape = () => {
     // 🔹 JSON Data (UI preview + code in one place)
     const componentsData = [
         {
             title: "Basic Navbar",
             code: `
-<div>
-    <div className="relative">
-        <input
-            placeholder="Search..."
-            className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-56 transition-all focus:w-64 outline-none"
-            name="search"
-            type="search"
-        />
-        <svg
-            className="size-6 absolute top-3 right-3 text-gray-500"
-            stroke="currentColor"
-            stroke-width="1.5"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path
-                d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                stroke-linejoin="round"
-                stroke-linecap="round"
-            ></path>
-        </svg>
-    </div>
-</div>
+
 
             `,
             preview: [
-                // <!-- From Uiverse.io by seyed-mohsen-mousavi --> 
-                <div className="relative">
-                    <input
-                        placeholder="Search..."
-                        className="input shadow-lg focus:border-2 border-gray-300 px-5 py-3 rounded-xl w-56 transition-all focus:w-64 outline-none"
-                        name="search"
-                        type="search"
-                    />
-                    <svg
-                        className="size-6 absolute top-3 right-3 text-gray-500"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <path
-                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
-                            stroke-linejoin="round"
-                            stroke-linecap="round"
-                        ></path>
-                    </svg>
-                </div>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-16 p-10 place-items-center">
 
+                    {/* Square */}
+                    <div className="w-20 h-20 bg-blue-500" />
+
+                    {/* Circle */}
+                    <div className="w-20 h-20 bg-green-500 rounded-full" />
+
+                    {/* Hollow Circle */}
+                    <div className="w-20 h-20 rounded-full border-4 border-purple-500" />
+
+                    {/* Half Circle */}
+                    <div className="w-20 h-10 bg-red-500 rounded-t-full" />
+
+                    {/* Triangle */}
+                    <div className="w-0 h-0 
+                    border-l-[40px] border-l-transparent
+                    border-r-[40px] border-r-transparent
+                    border-b-[70px] border-b-yellow-500"
+                    />
+
+                    {/* Star */}
+                    <div className="relative w-0 h-0
+                    border-l-[40px] border-l-transparent
+                    border-r-[40px] border-r-transparent
+                    border-b-[70px] border-b-pink-500">
+                        <div className="absolute -top-[45px] -left-[40px] w-0 h-0
+                        border-l-[40px] border-l-transparent
+                        border-r-[40px] border-r-transparent
+                        border-t-[70px] border-t-pink-500"
+                        />
+                    </div>
+
+                    {/* Flower */}
+                    <div className="relative w-20 h-20">
+                        {[...Array(6)].map((_, i) => (
+                            <span
+                                key={i}
+                                className="absolute w-8 h-8 bg-rose-400 rounded-full"
+                                style={{
+                                    top: "50%",
+                                    left: "50%",
+                                    transform: `rotate(${i * 60}deg) translate(0, -32px)`
+                                }}
+                            />
+                        ))}
+                        <span className="absolute inset-6 bg-yellow-400 rounded-full" />
+                    </div>
+
+                    {/* Random Shape */}
+                    <div className="w-20 h-20 bg-indigo-500 rounded-[30%_70%_70%_30%]" />
+
+                </div>
             ]
         },
     ];
@@ -152,4 +158,5 @@ const FirstInput = () => {
     );
 };
 
-export default FirstInput;
+export default FirstShape;
+
