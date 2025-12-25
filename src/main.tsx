@@ -22,7 +22,7 @@ import Image_Shape from "./page/Image_Shap";
 import Image from "./page/Image";
 import Input from "./page/Input";
 import Menu from "./page/Menu";
-import Model from "./page/Model";
+import Modal from "./page/Model";
 import Nav_Animation from "./page/Nav_Animetion";
 import Paragraph_Text from "./page/Pragraf_Text";
 import Registration from "./page/registration";
@@ -59,7 +59,7 @@ const router = createBrowserRouter([
   {  path: "/image", element: <Image/>,},
   {  path: "/input", element: <Input/>,},
   {  path: "/menu", element: <Menu/>,},
-  {  path: "/model", element: <Model/>,},
+  {  path: "/modal", element: <Modal/>,},
   {  path: "/nav-animation", element: <Nav_Animation/>,},
   {  path: "/paragraph-text", element: <Paragraph_Text/>,},
   {  path: "/registration", element: <Registration/>,},

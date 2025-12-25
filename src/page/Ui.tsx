@@ -28,7 +28,7 @@ const Ui = () => {
         { path: '/shape', name: 'Shape', icon: '🔷', category: 'Visual' },
         { path: '/header-text', name: 'Header Text', icon: '📰', category: 'Typography' },
         { path: '/paragraph-text', name: 'Paragraph Text', icon: '📄', category: 'Typography' },
-        { path: '/model', name: 'Modal', icon: '🪟', category: 'Interactive' },
+        { path: '/modal', name: 'Modal', icon: '🪟', category: 'Interactive' },
         { path: '/color', name: 'Color Palette', icon: '🎨', category: 'Design' },
         { path: '/color-text', name: 'Color Text', icon: '🌈', category: 'Typography' },
         { path: '/font', name: 'Font Family', icon: '🔤', category: 'Typography' },

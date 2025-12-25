@@ -1,21 +1,107 @@
 import React, { useState, type JSX } from 'react';
-import { FaCircle, FaRegHeart, } from 'react-icons/fa';
+import { FaCircle, } from 'react-icons/fa';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { useRef, useEffect } from "react";
 
 const StartMenu = () => {
+
+    const [open, setOpen] = useState(false);
+
+    // dropdown menu
+    const dropdownRef = useRef(null);
+
+    // after clikin button dropdown off
+    useEffect(() => {
+        const handleClickOutside = (e: { target: unknown; }) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+                setOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
+
     // 🔹 JSON Data (UI preview + code in one place)
     const componentsData = [
         {
             title: "Basic Menu",
             code: `
-<div>
-    
-</div>
+
+import { useState, useRef, useEffect } from "react";
+
+export default function Dropdown() {
+    const [open, setOpen] = useState(false);
+    const dropdownRef = useRef(null);
+
+    // after clikin button dropdown off
+    useEffect(() => {
+        const handleClickOutside = (e) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+            setOpen(false);
+        }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, []);
+
+    return (
+        <div className="relative inline-block" ref={dropdownRef}>
+            {/* Button */}
+            <button
+                onClick={() => setOpen(!open)}
+                className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition"
+            >
+                Memu
+            </button>
+
+            {/* Dropdown */}
+            {open && (
+                <ul className="absolute right-0 mt-2 w-52 rounded-lg bg-white shadow-lg border border-gray-200">
+                <li>
+                    <button className="w-full text-left px-4 py-2 hover:bg-gray-100">
+                    Item 1
+                    </button>
+                </li>
+                <li>
+                    <button className="w-full text-left px-4 py-2 hover:bg-gray-100">
+                    Item 2
+                    </button>
+                </li>
+                </ul>
+            )}
+        </div>
+  );
+}
 
             `,
             preview: [
-                
+                <div className="relative inline-block" ref={dropdownRef}>
+                    {/* Button */}
+                    <button
+                        onClick={() => setOpen(!open)}
+                        className="px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition"
+                    >
+                        menu
+                    </button>
+
+                    {/* Dropdown */}
+                    {open && (
+                        <ul className="absolute right-0 mt-2 w-52 rounded-lg bg-white shadow-lg border border-gray-200">
+                            <li>
+                                <button className="w-full text-left px-4 py-2 hover:bg-gray-100">
+                                    Item 1
+                                </button>
+                            </li>
+                            <li>
+                                <button className="w-full text-left px-4 py-2 hover:bg-gray-100">
+                                    Item 2
+                                </button>
+                            </li>
+                        </ul>
+                    )}
+                </div>
             ]
         },
     ];
