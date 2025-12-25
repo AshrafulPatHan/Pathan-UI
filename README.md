@@ -1,7 +1,7 @@
 
 # Pathan UI
 
-![Pathan UI](https://i.ibb.co.com/Q7dS7ngf/Screenshot-20251225-120000.png) <!-- If you have a logo, replace with actual path or add one -->
+![Pathan UI](https://i.ibb.co.com/Q7dS7ngf/Screenshot-20251225-120000.png) 
 
 **Pathan UI** is a free, open-source UI component library built with **React** and **Tailwind CSS**. It provides a collection of beautiful, reusable, and customizable components to help frontend React developers build modern web applications faster.
 
@@ -12,6 +12,11 @@ With **33 ready-to-use components**, Pathan UI focuses on simplicity, performanc
 
 ### GitHub Repository
 👉 [https://github.com/AshrafulPatHan/Pathan-UI](https://github.com/AshrafulPatHan/Pathan-UI)
+
+![Pathan UI](https://i.ibb.co.com/993QsFrk/Screenshot-20251225-120055.png) 
+
+![Pathan UI](https://i.ibb.co.com/Fkm7Zn5m/Screenshot-20251225-120039.png) 
+
 
 ## Features
 - **33+ Components**: Buttons, Cards, Modals, Navbars, Forms, Accordions, and more.
