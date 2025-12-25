@@ -60,28 +60,28 @@ const Drawer = () => {
           className="group p-2 rounded-xl transition-all duration-300 hover:bg-purple-400/20 hover:scale-110"
           title="Menu"
         >
-          <IoMdMenu className="text-2xl  text-blue-500 group-hover:text-blue-600 transition-colors duration-300"/>
+          <IoMdMenu className="text-2xl  text-blue-500 group-hover:text-blue-600 transition-colors duration-300" />
         </button>
-        
+
         <Link to='/'
           className="group p-2 rounded-xl transition-all duration-300 hover:bg-pink-400/20 hover:scale-110"
           title="Stop"
         >
-          <FaCircleStop className="text-xl  text-blue-500 group-hover:text-blue-600 transition-colors duration-300"/>
+          <FaCircleStop className="text-xl  text-blue-500 group-hover:text-blue-600 transition-colors duration-300" />
         </Link>
-        
+
         <Link to='/ui'
           className="group p-2 rounded-xl transition-all duration-300 hover:bg-blue-400/20 hover:scale-110"
           title="Home"
         >
-          <FaDesktop className="text-xl text-blue-500 group-hover:text-blue-600 transition-colors duration-300"/>
+          <FaDesktop className="text-xl text-blue-500 group-hover:text-blue-600 transition-colors duration-300" />
         </Link>
-        
+
         <button
           className="group p-2 rounded-xl transition-all duration-300 hover:bg-green-400/20 hover:scale-110"
           title="Scroll to Top"
         >
-          <FaLongArrowAltUp className="text-xl  text-blue-500 group-hover:text-blue-600 transition-colors duration-300"/>
+          <FaLongArrowAltUp className="text-xl  text-blue-500 group-hover:text-blue-600 transition-colors duration-300" />
         </button>
       </nav>
 
@@ -95,9 +95,8 @@ const Drawer = () => {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 h-full w-80 bg-gradient-to-br from-slate-900/95 via-purple-900/95 to-slate-800/95 backdrop-blur-xl border-r border-white/10 shadow-2xl z-50 transform transition-transform duration-500 ease-out ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed top-0 left-0 h-full w-80 bg-gradient-to-br from-slate-900/95 via-purple-900/95 to-slate-800/95 backdrop-blur-xl border-r border-white/10 shadow-2xl z-50 transform transition-transform duration-500 ease-out ${isOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         {/* Header */}
         <div className="p-6 flex justify-between items-center border-b border-white/10">
@@ -107,8 +106,8 @@ const Drawer = () => {
             </h2>
             <p className="text-sm text-gray-400 mt-1">UI Library</p>
           </div>
-          <button 
-            onClick={() => setIsOpen(false)} 
+          <button
+            onClick={() => setIsOpen(false)}
             className="group p-2 rounded-xl bg-white/5 hover:bg-red-400/20 transition-all duration-300 hover:scale-110"
           >
             <IoMdClose className="text-xl text-gray-300 group-hover:text-red-200 transition-colors duration-300" />
@@ -123,8 +122,8 @@ const Drawer = () => {
             <ul className="space-y-2">
               {mainMenuItems.map((item, index) => (
                 <li key={index}>
-                  <Link 
-                    to={item.to} 
+                  <Link
+                    to={item.to}
                     className="group flex items-center gap-3 p-3 rounded-xl text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-purple-400/20 hover:to-pink-400/20 transition-all duration-300"
                     onClick={() => setIsOpen(false)}
                   >
@@ -145,8 +144,8 @@ const Drawer = () => {
               <ul className="space-y-1">
                 {componentItems.map((item, index) => (
                   <li key={index}>
-                    <Link 
-                      to={item.to} 
+                    <Link
+                      to={item.to}
                       className="group flex items-center gap-3 p-3 rounded-xl text-gray-300 hover:text-white hover:bg-gradient-to-r hover:from-purple-400/10 hover:to-pink-400/10 transition-all duration-300 hover:translate-x-2"
                       onClick={() => setIsOpen(false)}
                     >
