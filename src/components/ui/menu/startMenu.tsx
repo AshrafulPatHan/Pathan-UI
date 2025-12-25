@@ -5,7 +5,6 @@ import { MdKeyboardArrowDown } from "react-icons/md";
 import { useRef, useEffect } from "react";
 
 const StartMenu = () => {
-
     const [open, setOpen] = useState(false);
 
     // dropdown menu
