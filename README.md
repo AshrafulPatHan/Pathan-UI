@@ -5,7 +5,7 @@
 
 **Pathan UI** is a free, open-source UI component library built with **React** and **Tailwind CSS**. It provides a collection of beautiful, reusable, and customizable components to help frontend React developers build modern web applications faster.
 
-With **33 ready-to-use components**, Pathan UI focuses on simplicity, performance, and developer experience. All components are styled using Tailwind CSS, with some animations powered by pure CSS, GSAP, or Framer Motion.
+With **32 ready-to-use components**, Pathan UI focuses on simplicity, performance, and developer experience. All components are styled using Tailwind CSS, with some animations powered by pure CSS, GSAP, or Framer Motion.
 
 ### Live Demo
 👉 [https://pathan-ui.vercel.app](https://pathan-ui.vercel.app)
