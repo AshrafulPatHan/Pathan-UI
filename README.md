@@ -46,7 +46,7 @@ import { Button } from 'pathan-ui/components/Button'; // Adjust path as needed
 function App() {
   return <Button variant="primary">Click me</Button>;
 }
-
+```
 
 (Refer to the live demo or repository for exact usage of each component.)
 
