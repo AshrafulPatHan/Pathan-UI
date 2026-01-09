@@ -10,7 +10,7 @@ const StartMenu = () => {
     // dropdown menu
     const dropdownRef =  useRef<HTMLDivElement | null>(null);
 
-    // after clikin button dropdown off
+    // after clicking button dropdown off
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
             if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
@@ -34,7 +34,7 @@ export default function Dropdown() {
     const [open, setOpen] = useState(false);
     const dropdownRef = useRef(null);
 
-    // after clikin button dropdown off
+    // after clicking button dropdown off
     useEffect(() => {
         const handleClickOutside = (e) => {
         if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {

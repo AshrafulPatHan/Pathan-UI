@@ -1,5 +1,5 @@
 // import React from 'react'
-import {  createBrowserRouter,  RouterProvider, } from "react-router";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import Ui from "./page/Ui";
@@ -38,41 +38,41 @@ import Javascript from "./page/Javascript";
 import Template from "./page/Template";
 
 const router = createBrowserRouter([
-  {  path: "/", element: <App/>,},
-  {  path: "/ui", element: <Ui/>,},
-  {  path: "/code", element: <Code/>,},
-  {  path: "/card", element: <Card/>,},
-  {  path: "/animation", element: <Animation/>,},
-  {  path: "/button", element: <Button/>,},
-  {  path: "/slider", element: <Slider/>,},
-  {  path: "/color-text", element: <Color_Text/>,},
-  {  path: "/color", element: <Color/>,},
-  {  path: "/contact", element: <Contact/>,},
-  {  path: "/dropdown", element: <Dropdown/>,},
-  {  path: "/flex", element: <Flex/>,},
-  {  path: "/font", element: <Font/>,},
-  {  path: "/form", element: <Form/>,},
-  {  path: "/grid", element: <Grid/>,},
-  {  path: "/header-text", element: <Header_Text/>,},
-  {  path: "/hero", element: <Hero/>,},
-  {  path: "/image-shape", element: <Image_Shape/>,},
-  {  path: "/image", element: <Image/>,},
-  {  path: "/input", element: <Input/>,},
-  {  path: "/menu", element: <Menu/>,},
-  {  path: "/modal", element: <Modal/>,},
-  {  path: "/nav-animation", element: <Nav_Animation/>,},
-  {  path: "/paragraph-text", element: <Paragraph_Text/>,},
-  {  path: "/registration", element: <Registration/>,},
-  {  path: "/login", element: <Login/>,},
-  {  path: "/scroll-animation", element: <Scroll_animation/>,},
-  {  path: "/tutorial", element: <Tutorial/>,},
-  {  path: "/shape", element: <Shape/>,},
-  {  path: "/footer", element: <Footer/>,},
-  {  path: "/admin-page", element: <Admin_Page/>,},
-  {  path: "/navbar", element: <Navbar/>,},
-  {  path: "/javascript", element: <Javascript/>,},
-  {  path: "/express", element: <Express/>,},
-  {  path: "/template", element: <Template/>,},
+  { path: "/", element: <App /> },
+  { path: "/ui", element: <Ui /> },
+  { path: "/code", element: <Code /> },
+  { path: "/card", element: <Card /> },
+  { path: "/animation", element: <Animation /> },
+  { path: "/button", element: <Button /> },
+  { path: "/slider", element: <Slider /> },
+  { path: "/color-text", element: <Color_Text /> },
+  { path: "/color", element: <Color /> },
+  { path: "/contact", element: <Contact /> },
+  { path: "/dropdown", element: <Dropdown /> },
+  { path: "/flex", element: <Flex /> },
+  { path: "/font", element: <Font /> },
+  { path: "/form", element: <Form /> },
+  { path: "/grid", element: <Grid /> },
+  { path: "/header-text", element: <Header_Text /> },
+  { path: "/hero", element: <Hero /> },
+  { path: "/image-shape", element: <Image_Shape /> },
+  { path: "/image", element: <Image /> },
+  { path: "/input", element: <Input /> },
+  { path: "/menu", element: <Menu /> },
+  { path: "/modal", element: <Modal /> },
+  { path: "/nav-animation", element: <Nav_Animation /> },
+  { path: "/paragraph-text", element: <Paragraph_Text /> },
+  { path: "/registration", element: <Registration /> },
+  { path: "/login", element: <Login /> },
+  { path: "/scroll-animation", element: <Scroll_animation /> },
+  { path: "/tutorial", element: <Tutorial /> },
+  { path: "/shape", element: <Shape /> },
+  { path: "/footer", element: <Footer /> },
+  { path: "/admin-page", element: <Admin_Page /> },
+  { path: "/navbar", element: <Navbar /> },
+  { path: "/javascript", element: <Javascript /> },
+  { path: "/express", element: <Express /> },
+  { path: "/template", element: <Template /> },
 ]);
 
 const root = document.getElementById("root");
@@ -81,6 +81,4 @@ if (!root) {
   throw new Error("Root element not found");
 }
 
-ReactDOM.createRoot(root).render(
-  <RouterProvider router={router} />
-);
+ReactDOM.createRoot(root).render(<RouterProvider router={router} />);

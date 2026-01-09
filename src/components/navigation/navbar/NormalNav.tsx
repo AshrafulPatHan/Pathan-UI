@@ -1,8 +1,7 @@
 import React, { useState, type JSX } from 'react';
-import { FaCircle, FaRegHeart,  } from 'react-icons/fa';
+import { FaCircle  } from 'react-icons/fa';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import ImageS from "../../../assets/image/astronot.jpg"
 import { Link } from 'react-router';
 
 const NormalNav = () => {

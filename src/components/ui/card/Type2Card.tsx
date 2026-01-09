@@ -1,78 +1,92 @@
 import React, { useState, type JSX } from 'react';
-import { FaCircle, FaRegHeart, } from 'react-icons/fa';
+import { FaCircle } from 'react-icons/fa';
 import { IoCopyOutline } from "react-icons/io5";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import ImageS from "/image/astronot.jpg"
 
-const NormalCard = () => {
+const Type2Card = () => {
+
+    // css
+    const borderStyle = {
+        boxShadow: `
+            inset 0 1px 2px #ffffff30,
+            0 4px 10px #00000030,
+            0 6px 10px #00000015
+`
+    };
+
+
     // 🔹 JSON Data (UI preview + code in one place)
     const componentsData = [
         {
             title: "Basic Card",
             code: `
-# card 1
-<div className='w-80 '>
-    <div className='w-80 h-auto overflow-hidden object-center rounded-lg'>
-        <img src={ImageS} alt="photo" className='w-full h-full object-cover scale-100 hover:scale-110 transition-transform duration-300 ease-in-out ' />
+// css
+const borderStyle = {
+    boxShadow: '
+        inset 0 1px 2px #ffffff30,
+        0 4px 10px #00000030,
+        0 6px 10px #00000015
+    '
+};
+
+// card
+<div style={borderStyle} className='p-4 rounded-2xl flex' >
+    <div className='rounded-2xl w-1/2 overflow-hidden '>
+        <img src="https://i.ibb.co.com/mFC2WhpZ/pexels-aimbere-elorza-1176843138-27220713.jpg" alt="image" />
     </div>
-    <div className='text-sm font-mono'>
-        <h2 className='text-lg font-bold font-serif mt-2'>Title</h2>
-        <p className='mb-1 font-semibold'>Subtitle of the card</p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id maiores ex facilis explicabo voluptates fuga pariatur, atque quisquam! Sed!
-        </p>
-    </div>
-</div>
-# card 2
-<div className='w-80 '>
-    <div className='w-80 h-auto overflow-hidden object-center rounded-lg'>
-        <img src={ImageS} alt="photo" className='w-full h-full object-cover scale-100 hover:scale-110 transition-transform duration-300 ease-in-out ' />
-    </div>
-    <div className='text-sm font-mono'>
-        <div className='flex items-center justify-between'>
-            <h2 className='text-lg font-bold font-serif mt-2'>Title</h2>
-            <button className='mr-1'>
-                <FaRegHeart className='text-xl'/>
-            </button>
+    <div className='px-6 w-1/2'>
+        <div>
+            <h2 className='text-2xl font-bold font-serif mb-3'>Title of the card</h2>
+            <p className='text-sm text-gray-600 italic '>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit corrupti velit iste aperiam alias omnis laborum qui aut architecto.
+            </p>
         </div>
-        <p className='mb-1 font-semibold'>Subtitle of the card</p>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id maiores ex facilis explicabo voluptates fuga pariatur, atque quisquam! Sed!
-        </p>
+
+        <div className='flex items-center justify-between mt-8 '>
+            <div className='flex gap-3'>
+                <div className='w-12 h-12 rounded-full overflow-hidden bg-black'>
+                    <img src="https://i.ibb.co.com/GvWGMT4T/Screenshot-20250712-211018.png" alt="photo" className='w-full h-full object-center' />
+                </div>
+                <div className='text-sm'>
+                    <h3 className='font-bold'>Name</h3>
+                    <p className='font-extralight text-gray-700'>january, 9, 2026</p>
+                </div>
+            </div>
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-share-icon lucide-share"><path d="M12 2v13" /><path d="m16 6-4-4-4 4" /><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" /></svg>
+            </a>
+        </div>
     </div>
-</div>
+</div> 
 
             `,
             preview: [
-                // card 1
-                <div className='w-80 '>
-                    <div className='w-80 h-auto overflow-hidden object-center rounded-lg'>
-                        <img src={ImageS} alt="photo" className='w-full h-full object-cover scale-100 hover:scale-110 transition-transform duration-300 ease-in-out ' />
+                <div style={borderStyle} className='p-4 rounded-2xl flex' >
+                    <div className='rounded-2xl w-1/2 overflow-hidden '>
+                        <img src="https://i.ibb.co.com/mFC2WhpZ/pexels-aimbere-elorza-1176843138-27220713.jpg" alt="image" />
                     </div>
-                    <div className='text-sm font-mono'>
-                        <h2 className='text-lg font-bold font-serif mt-2'>Title</h2>
-                        <p className='mb-1 font-semibold'>Subtitle of the card</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id maiores ex facilis explicabo voluptates fuga pariatur, atque quisquam! Sed!
-                        </p>
-                    </div>
-                </div>,
-                // card 2
-                <div className='w-80 '>
-                    <div className='w-80 h-auto overflow-hidden object-center rounded-lg'>
-                        <img src={ImageS} alt="photo" className='w-full h-full object-cover scale-100 hover:scale-110 transition-transform duration-300 ease-in-out ' />
-                    </div>
-                    <div className='text-sm font-mono'>
-                        <div className='flex items-center justify-between'>
-                            <h2 className='text-lg font-bold font-serif mt-2'>Title</h2>
-                            <button className='mr-1'>
-                                <FaRegHeart className='text-xl' />
-                            </button>
+                    <div className='px-6 w-1/2'>
+                        <div>
+                            <h2 className='text-2xl font-bold font-serif mb-3'>Title of the card</h2>
+                            <p className='text-sm text-gray-600 italic '>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit corrupti velit iste aperiam alias omnis laborum qui aut architecto.
+                            </p>
                         </div>
-                        <p className='mb-1 font-semibold'>Subtitle of the card</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus id maiores ex facilis explicabo voluptates fuga pariatur, atque quisquam! Sed!
-                        </p>
+
+                        <div className='flex items-center justify-between mt-8 '>
+                            <div className='flex gap-3'>
+                                <div className='w-12 h-12 rounded-full overflow-hidden bg-black'>
+                                    <img src="/image/Hitler.jpg" alt="photo" className='w-full h-full object-cover' />
+                                </div>
+                                <div className='text-sm'>
+                                    <h3 className='font-bold'>Name</h3>
+                                    <p className='font-extralight text-gray-700'>january, 9, 2026</p>
+                                </div>
+                            </div>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-share-icon lucide-share"><path d="M12 2v13" /><path d="m16 6-4-4-4 4" /><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" /></svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             ]
@@ -167,4 +181,4 @@ const NormalCard = () => {
     );
 };
 
-export default NormalCard;
+export default Type2Card;
