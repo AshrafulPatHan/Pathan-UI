@@ -1,68 +1,62 @@
 @import "tailwindcss";
 
 :root {
-  --margin-top: 80px;
-  --primary: #f5f5f5;
+    --margin-top: 80px;
+    --primary: #f5f5f5;
 }
 
-body{
-  background: var(--primary);
+body {
+    background: var(--primary);
 }
 
-
-.Link_card{
-  color: rgb(255, 255, 255);
-  padding: 6px 12px;
-  background: linear-gradient(#7038af,#7b4faa);
+.Link_card {
+    color: rgb(255, 255, 255);
+    padding: 6px 12px;
+    background: linear-gradient(#7038af, #7b4faa);
 }
 
-.brawer_text{
-  color: rgb(56, 56, 206);
+.brawer_text {
+    color: rgb(56, 56, 206);
 }
 .brawer_text:hover {
-  text-decoration: underline;
-  text-decoration-color: rgb(0, 0, 0);
-  text-decoration-style: solid;
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    text-decoration-style: solid;
 }
-
 
 /* add custom scroll bar */
 
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+    width: 6px;
+    height: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #38ca38;
-  border-radius: 12px;
+    background-color: #38ca38;
+    border-radius: 12px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #5edb24;
+    background-color: #5edb24;
 }
 ::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
-
-
 
 /* Tailwind Scrollbar Customization */
 .scrollbar-thin {
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: #6b7280 transparent; /* Firefox */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #6b7280 transparent; /* Firefox */
 }
 
 .scrollbar-thin::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+    width: 6px;
+    height: 6px;
 }
 
 .scrollbar-thin::-webkit-scrollbar-thumb {
-  background-color: #6b7280; /* Tailwind gray-500 */
-  border-radius: 4px;
+    background-color: #6b7280; /* Tailwind gray-500 */
+    border-radius: 4px;
 }
 
 .scrollbar-thin::-webkit-scrollbar-track {
-  background: transparent;
+    background: transparent;
 }
-
-
